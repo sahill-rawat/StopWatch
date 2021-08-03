@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+
+    <nav style="background-color: black;" class="navbar">
+        <div class="container-fluid" style="justify-content: center;">
+          <a class="navbar-brand f-s-2rem"
+          style="color: white;"> StopWatch </a>
+        </div>
+    </nav>
+
+    <div class="dim" style="background: url(./bg.jfif);">
+        <div id="set-timer" class="container set-timer-dim m-t-30px f-s-2rem border-white border-rad-30px">
+            <div class="row btns m-t-10px">
+                <div id="btn1minus" class="col-4">-</div>
+                <div id="btn2minus" class="col-4">-</div>
+                <div id="btn3minus" class="col-4">-</div>
+            </div>
+
+            <div class="row blur">
+                <div id="hrs" class="col-4 cl">22</div>
+                <div id="min" class="col-4 cl">58</div>
+                <div id="sec" class="col-4 cl">58</div>
+            </div>
+            <div class="row blur">
+                <div id="hrs" class="col-4 cl">23</div>
+                <div id="min" class="col-4 cl">59</div>
+                <div id="sec" class="col-4 cl">59</div>
+            </div>
+    
+            <div class="row">
+                <div id="hrs" class="col-4 cl time-hr">00</div>
+                <div id="min" class="col-4 cl time-min">00</div>
+                <div id="sec" class="col-4 cl time-sec">00</div>
+            </div>
+    
+            <div class="row blur">
+                <div id="hrs" class="col-4 cl">01</div>
+                <div id="min" class="col-4 cl">01</div>
+                <div id="sec" class="col-4 cl">01</div>
+            </div>
+            <div class="row blur">
+                <div id="hrs" class="col-4 cl">02</div>
+                <div id="min" class="col-4 cl">02</div>
+                <div id="sec" class="col-4 cl">02</div>
+            </div>
+
+            <div class="row btns">
+                <div id="btn1plus" class="col-4">+</div>
+                <div id="btn2plus" class="col-4">+</div>
+                <div id="btn3plus" class="col-4">+</div>
+            </div>
+    
+            <div id="start" class="container f-s-2rem b-f">Start</div>
+        </div>
+
+    
+        <div id="start-timer" class="container-fluid hide m-t-30px">
+            <div class="container start-timer-dim m-t-20px border-white border-rad-30px">
+                <div class="circle m-t-30px">
+                    <div class="row flex pos f-s-2rem">
+                        <div id="hrs-2" class="col-3 cl">00</div>
+                        <div id="min-2" class="col-3 cl">00</div>
+                        <div id="sec-2" class="col-3 cl">00</div>
+                    </div>
+                </div>
+                <div id="stop" class="container f-s-2rem b-f m-t-30px">Stop</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="stopwatch.js"></script>
+
+</body>
+</html>
